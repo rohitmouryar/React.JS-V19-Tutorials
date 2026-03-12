@@ -1,22 +1,19 @@
 // export const App = () =>{
-//   return <h1>Hello Rohit Mourya</h1>;  
+//   return <h1>Hello Rohit Mourya</h1>;
 // };
 
-import { jsx } from "react/jsx-runtime"
-
+// import { jsx } from "react/jsx-runtime";
 
 // Task 2
 // Babel : It is JS compiler (React -> JS code)
 // return React.createElement("h1", null, "Hello Rohit Mourya");
 
-
 // Tutorial 6: ComponentS
 
 // Step 1: Create a component
 //  const Greeting = () =>{
-//   return <h1>Hello Rohit Mourya</h1>;  
+//   return <h1>Hello Rohit Mourya</h1>;
 // }
-
 
 // Step 2: Use the component
 /*export const App = () =>{
@@ -31,11 +28,9 @@ import { jsx } from "react/jsx-runtime"
 }
 */
 
-
-
 // Tutorial 7: React Fragments
 
-// How to remove multiple node from the DOM 
+// How to remove multiple node from the DOM
 // Step 1 Using Array
 /*export const App = () =>{
   return([
@@ -50,32 +45,30 @@ import { jsx } from "react/jsx-runtime"
   */
 
 // Step 2: Using React Fragment
-// import React, { Fragment } from "react";  
+// import React, { Fragment } from "react";
 // import { Fragment } from "react";
 
 // export const App = () =>{
 //   return(
-    // <React.Fragment>
-    //   <Greeting />
-    //   <Greeting />
-    //   <Greeting />
-    //   <Greeting />
-    // </React.Fragment>
+// <React.Fragment>
+//   <Greeting />
+//   <Greeting />
+//   <Greeting />
+//   <Greeting />
+// </React.Fragment>
 
-    // <Fragment>
-    //   <Greeting />
-    // </Fragment>
+// <Fragment>
+//   <Greeting />
+// </Fragment>
 
-    // <>
-    // <Greeting />
-    // <Greeting />
-    // <Greeting />
-    // <Greeting />
-    // </>
+// <>
+// <Greeting />
+// <Greeting />
+// <Greeting />
+// <Greeting />
+// </>
 //   )
 // }
-
-
 
 // Tutorial 8: Dynamic values in jsx
 
@@ -86,7 +79,7 @@ import { jsx } from "react/jsx-runtime"
 //   const age = 22;
 //   const Summary =" Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem sunt, enim tempora" ;
 //   return (
-//     <div>    
+//     <div>
 //     <h1>Good Morning {name}</h1>
 //     <p>You are {age} years old.</p>
 //     <p>{Summary}</p>
@@ -94,16 +87,15 @@ import { jsx } from "react/jsx-runtime"
 //   );
 // };
 
-
 // Step 2: Using Expressions
 // export const App = () =>{
 
-//   const name ="Dheeraj Kaushik" 
+//   const name ="Dheeraj Kaushik"
 //   return (
-//     <div>    
-//     <h1>Good Morning {name.toUpperCase()}</h1> 
-//     // Expression: It is a piece of code that produces a value.    
-//     <p>2 + 3 = {2 + 3}</p>  
+//     <div>
+//     <h1>Good Morning {name.toUpperCase()}</h1>
+//     // Expression: It is a piece of code that produces a value.
+//     <p>2 + 3 = {2 + 3}</p>
 //     <p>{`My name is ${name}`}</p>
 //     </div>
 //   );
@@ -120,10 +112,10 @@ import { jsx } from "react/jsx-runtime"
 //   const movie = () => {
 //     const movies = "Dangle";
 //     return movies;
-//   };  
-  
+//   };
+
 //   return (
-//     <div>    
+//     <div>
 //     <h1>Good Morning {name}</h1>
 //     <p>You are {age} years old.</p>
 //     <p>{Summary}</p>
@@ -132,15 +124,13 @@ import { jsx } from "react/jsx-runtime"
 //   )
 // }
 
-
-
 // Tutorial 9: Contional value in jsx
 // 4 way to render conditional value in jsx
 
 // Way 1: Using if-else statement
 
 // export const App = () =>{
- 
+
 //   const name ="Dheeraj Kaushik";
 //   const age = 12;
 //   const Summary =" Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem sunt, enim tempora" ;
@@ -148,11 +138,11 @@ import { jsx } from "react/jsx-runtime"
 //   const movie = () => {
 //     const movies = "Dangle";
 //     return movies;
-//   };  
+//   };
 
 //   if( age > 18){
 //     return(
-//       <div>    
+//       <div>
 //       <h1>Good Morning {name}</h1>
 //       <p>You are {age} years old.</p>
 //       <p>{Summary}</p>
@@ -161,9 +151,9 @@ import { jsx } from "react/jsx-runtime"
 //       </div>
 //     )
 //   }
-  
+
 //   return (
-//     <div>    
+//     <div>
 //     <h1>Good Morning {name}</h1>
 //     <p>You are {age} years old.</p>
 //     <p>{Summary}</p>
@@ -173,12 +163,10 @@ import { jsx } from "react/jsx-runtime"
 //   )
 // }
 
-
 //  way 2: Using ternary operator
 
-
 // export const App = () =>{
- 
+
 //   const name ="Dheeraj Kaushik";
 //   const age = 22;
 //   const Summary =" Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem sunt, enim tempora" ;
@@ -186,11 +174,10 @@ import { jsx } from "react/jsx-runtime"
 //   const movie = () => {
 //     const movies = "Dangle";
 //     return movies;
-//   };  
+//   };
 
-  
 //   return (
-//     <div>    
+//     <div>
 //     <h1>Good Morning {name}</h1>
 //     <p>You are {age} years old.</p>
 //     <p>{Summary}</p>
@@ -200,11 +187,10 @@ import { jsx } from "react/jsx-runtime"
 //   )
 // }
 
-
 // way 3 using functions
 
 // export const App = () =>{
- 
+
 //   const name ="Dheeraj Kaushik";
 //   const age = 22;
 //   const Summary =" Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem sunt, enim tempora" ;
@@ -212,7 +198,7 @@ import { jsx } from "react/jsx-runtime"
 //   const movie = () => {
 //     const movies = "Dangle";
 //     return movies;
-//   };  
+//   };
 
 //   const canWatch = () => {
 //   if(age < 18){
@@ -222,9 +208,8 @@ import { jsx } from "react/jsx-runtime"
 //   }
 // };
 
- 
 //   return (
-//     <div>    
+//     <div>
 //     <h1>Good Morning {name}</h1>
 //     <p>You are {age} years old.</p>
 //     <p>{Summary}</p>
@@ -234,36 +219,56 @@ import { jsx } from "react/jsx-runtime"
 //   )
 // }
 
-
 // way 4 using variable
 
+// export const App = () =>{
 
-export const App = () =>{
- 
-  const name ="Dheeraj Kaushik";
-  const age = 22;
-  const Summary =" Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem sunt, enim tempora" ;
+//   const name ="Dheeraj Kaushik";
+//   const age = 22;
+//   const Summary =" Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem sunt, enim tempora" ;
 
-  const movie = () => {
-    const movies = "Dangle";
-    return movies;
-  };  
+//   const movie = () => {
+//     const movies = "Dangle";
+//     return movies;
+//   };
 
+// let canWatch = "Not Available";
+// if (age >= 18) {
+//   canWatch = "Watch Now";
+// }
 
-let canWatch = "Not Available";
-if (age >= 18) {
-  canWatch = "Watch Now";
-}
+//   return (
+//
 
+// Tutorial :11 Imports and exorts in reactjs
 
- 
+// 1. Default Export and Import
+// import Movie from "./components/NetflixSeries.jsx";
+// export const App = () => {
+//   return (
+//     <div>
+//       <Movie />
+//     </div>
+//   );
+// };
+
+// 2. Named Export and Import
+// import { NetflixSeries } from "./components/NetflixSeries";
+// export const App = () => {
+//   return (
+//     <div>
+//       <NetflixSeries />
+//     </div>
+//   );
+// };
+
+// 3. Mixed Export and Import
+import Movie, { NetflixSeries } from "./components/NetflixSeries";
+export const App = () => {
   return (
-    <div>    
-    <h1>Good Morning {name}</h1>
-    <p>You are {age} years old.</p>
-    <p>{Summary}</p>
-    <p>My favourite movie is {movie()}</p>
-    <button>{canWatch}</button>
+    <div>
+      <NetflixSeries />
+      <Movie />
     </div>
-  )
-}
+  );
+};
