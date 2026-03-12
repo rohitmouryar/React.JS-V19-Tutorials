@@ -2,6 +2,8 @@
 //   return <h1>Hello Rohit Mourya</h1>;  
 // };
 
+import { jsx } from "react/jsx-runtime"
+
 
 // Task 2
 // Babel : It is JS compiler (React -> JS code)
@@ -11,9 +13,9 @@
 // Tutorial 6: ComponentS
 
 // Step 1: Create a component
- const Greeting = () =>{
-  return <h1>Hello Rohit Mourya</h1>;  
-}
+//  const Greeting = () =>{
+//   return <h1>Hello Rohit Mourya</h1>;  
+// }
 
 
 // Step 2: Use the component
@@ -49,10 +51,10 @@
 
 // Step 2: Using React Fragment
 // import React, { Fragment } from "react";  
-import { Fragment } from "react";
+// import { Fragment } from "react";
 
-export const App = () =>{
-  return(
+// export const App = () =>{
+//   return(
     // <React.Fragment>
     //   <Greeting />
     //   <Greeting />
@@ -64,11 +66,204 @@ export const App = () =>{
     //   <Greeting />
     // </Fragment>
 
-    <>
-    <Greeting />
-    <Greeting />
-    <Greeting />
-    <Greeting />
-    </>
+    // <>
+    // <Greeting />
+    // <Greeting />
+    // <Greeting />
+    // <Greeting />
+    // </>
+//   )
+// }
+
+
+
+// Tutorial 8: Dynamic values in jsx
+
+// Step1 Using Variable
+// export const App = () =>{
+
+//   const name ="Dheeraj Kaushik"
+//   const age = 22;
+//   const Summary =" Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem sunt, enim tempora" ;
+//   return (
+//     <div>    
+//     <h1>Good Morning {name}</h1>
+//     <p>You are {age} years old.</p>
+//     <p>{Summary}</p>
+//     </div>
+//   );
+// };
+
+
+// Step 2: Using Expressions
+// export const App = () =>{
+
+//   const name ="Dheeraj Kaushik" 
+//   return (
+//     <div>    
+//     <h1>Good Morning {name.toUpperCase()}</h1> 
+//     // Expression: It is a piece of code that produces a value.    
+//     <p>2 + 3 = {2 + 3}</p>  
+//     <p>{`My name is ${name}`}</p>
+//     </div>
+//   );
+// }
+
+// Step 3: Using Functions
+
+// export const App = () =>{
+
+//   const name ="Dheeraj Kaushik";
+//   const age = 22;
+//   const Summary =" Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem sunt, enim tempora" ;
+
+//   const movie = () => {
+//     const movies = "Dangle";
+//     return movies;
+//   };  
+  
+//   return (
+//     <div>    
+//     <h1>Good Morning {name}</h1>
+//     <p>You are {age} years old.</p>
+//     <p>{Summary}</p>
+//     <p>My favourite movie is {movie()}</p>
+//     </div>
+//   )
+// }
+
+
+
+// Tutorial 9: Contional value in jsx
+// 4 way to render conditional value in jsx
+
+// Way 1: Using if-else statement
+
+// export const App = () =>{
+ 
+//   const name ="Dheeraj Kaushik";
+//   const age = 12;
+//   const Summary =" Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem sunt, enim tempora" ;
+
+//   const movie = () => {
+//     const movies = "Dangle";
+//     return movies;
+//   };  
+
+//   if( age > 18){
+//     return(
+//       <div>    
+//       <h1>Good Morning {name}</h1>
+//       <p>You are {age} years old.</p>
+//       <p>{Summary}</p>
+//       <p>My favourite movie is {movie()}</p>
+//       <button>Not Avaiable</button>
+//       </div>
+//     )
+//   }
+  
+//   return (
+//     <div>    
+//     <h1>Good Morning {name}</h1>
+//     <p>You are {age} years old.</p>
+//     <p>{Summary}</p>
+//     <p>My favourite movie is {movie()}</p>
+//     <button>Watch Now</button>
+//     </div>
+//   )
+// }
+
+
+//  way 2: Using ternary operator
+
+
+// export const App = () =>{
+ 
+//   const name ="Dheeraj Kaushik";
+//   const age = 22;
+//   const Summary =" Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem sunt, enim tempora" ;
+
+//   const movie = () => {
+//     const movies = "Dangle";
+//     return movies;
+//   };  
+
+  
+//   return (
+//     <div>    
+//     <h1>Good Morning {name}</h1>
+//     <p>You are {age} years old.</p>
+//     <p>{Summary}</p>
+//     <p>My favourite movie is {movie()}</p>
+//     <button>{age < 18 ? "Not Available" : "Watch Now"}</button>
+//     </div>
+//   )
+// }
+
+
+// way 3 using functions
+
+// export const App = () =>{
+ 
+//   const name ="Dheeraj Kaushik";
+//   const age = 22;
+//   const Summary =" Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem sunt, enim tempora" ;
+
+//   const movie = () => {
+//     const movies = "Dangle";
+//     return movies;
+//   };  
+
+//   const canWatch = () => {
+//   if(age < 18){
+//     return "Not Available";
+//   } else{
+//     return "Watch Now";
+//   }
+// };
+
+ 
+//   return (
+//     <div>    
+//     <h1>Good Morning {name}</h1>
+//     <p>You are {age} years old.</p>
+//     <p>{Summary}</p>
+//     <p>My favourite movie is {movie()}</p>
+//     <button>{canWatch()}</button>
+//     </div>
+//   )
+// }
+
+
+// way 4 using variable
+
+
+export const App = () =>{
+ 
+  const name ="Dheeraj Kaushik";
+  const age = 22;
+  const Summary =" Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem sunt, enim tempora" ;
+
+  const movie = () => {
+    const movies = "Dangle";
+    return movies;
+  };  
+
+
+let canWatch = "Not Available";
+if (age >= 18) {
+  canWatch = "Watch Now";
+}
+
+
+ 
+  return (
+    <div>    
+    <h1>Good Morning {name}</h1>
+    <p>You are {age} years old.</p>
+    <p>{Summary}</p>
+    <p>My favourite movie is {movie()}</p>
+    <button>{canWatch}</button>
+    </div>
   )
 }
