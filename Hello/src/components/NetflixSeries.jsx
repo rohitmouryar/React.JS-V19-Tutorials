@@ -56,6 +56,22 @@
 // export default NetflixSeries;
 
 // Tutorial :13 props
+// import seriesData from "../api/seriesData.json";
+// import { SeriesCard } from "./SeriesCard";
+
+// const NetflixSeries = () => {
+//   return (
+//     <ul>
+//       {seriesData.map((curELem) => {
+//         return <SeriesCard key={curELem.id} curELem={curELem} />;
+//       })}
+//     </ul>
+//   );
+// };
+
+// export default NetflixSeries;
+
+// Tutorial: 14 Destructuring props
 import seriesData from "../api/seriesData.json";
 import { SeriesCard } from "./SeriesCard";
 
@@ -63,7 +79,7 @@ const NetflixSeries = () => {
   return (
     <ul>
       {seriesData.map((curELem) => {
-        return <SeriesCard key={curELem.id} curELem={curELem} />;
+        return <SeriesCard key={curELem.id} data={curELem} />;
       })}
     </ul>
   );
