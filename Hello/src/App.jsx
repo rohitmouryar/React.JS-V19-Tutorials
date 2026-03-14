@@ -263,11 +263,21 @@
 // };
 
 // 3. Mixed Export and Import
-import Movie, { NetflixSeries } from "./components/NetflixSeries";
+// import Movie, { NetflixSeries } from "./components/NetflixSeries";
+// export const App = () => {
+//   return (
+//     <div>
+//       <NetflixSeries />
+//       <Movie />
+//     </div>
+//   );
+// };
+
+// Tutorial: 12 Looping in JSX
+import Movie from "./components/NetflixSeries";
 export const App = () => {
   return (
     <div>
-      <NetflixSeries />
       <Movie />
     </div>
   );
